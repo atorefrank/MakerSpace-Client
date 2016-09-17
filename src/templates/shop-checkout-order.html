@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+
+{% block head_title %}Welcome | {{block.super}}{% endblock %}
+
+{% block content %}
+        <!-- Optional header components (ex: slider) -->
+            <!-- Importing slider content -->
+    <!-- include('includes.sliders.layer-slider-shop') -->
+    
+    <!-- MAIN CONTENT -->
+        <div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Order review</h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li class="active">Order review</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="slice bg-white">
+        <div class="wp-section shop"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Checkout process - Progress bar -->
+                        <ol class="progtrckr hidden-xs" data-progtrckr-steps="6">
+                            <li class="progtrckr-done">Checkout method</li>
+                            <li class="progtrckr-done">Shipping</li>
+                            <li class="progtrckr-done">Payment method</li>
+                            <li class="progtrckr-done">Order review</li>
+                            <li class="progtrckr-todo">Delivered</li>
+                        </ol>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="panel panel-default panel-sidebar-1">
+                                    <div class="panel-heading">
+                                        <h2>Your products</h2>
+                                    </div>
+                                    <table class="table table-cart table-responsive">
+                                        <tbody>
+                                            <tr>
+                                                <th>Item</th>
+                                                <th>Product name</th>
+                                                <th>Price</th>
+                                                <th>Quantity</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td><img src="images/prv/product-3.png" class="img-center" alt=""></td>
+                                                <td><a href="">Asus Ultra Notebook</a></td>
+                                                <td>RON 300.99</td>
+                                                <td>2</td>
+                                                <td>RON 600.99</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/prv/product-2.png" class="img-center" alt=""></td>
+                                                <td><a href="">Microsoft Mouse</a></td>
+                                                <td>RON 300.99</td>
+                                                <td>4</td>
+                                                <td>RON 600.99</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/prv/product-1.png" class="img-center" alt=""></td>
+                                                <td><a href="">Nikon Coolpix L320</a></td>
+                                                <td>RON 300.99</td>
+                                                <td>2</td>
+                                                <td>RON 600.99</td>                                        
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default panel-sidebar-1">
+                                            <div class="panel-heading">
+                                                <h2>Shipping information</h2>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-md-6 br">
+                                                        <strong>Alexander Smith</strong>
+                                                        <p>Bucharest, Romania</p>
+                                                        <p>Phone: +40 - 722.345.678</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="table">
+                                                            <div class="cell width-30">
+                                                                <img src="images/icons/fan-curier.png" alt="">
+                                                            </div>
+                                                            <div class="cell" style="padding-left: 5px;">
+                                                                <strong>Fan Curier - Romania</strong>
+                                                                <p>3 days</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default panel-sidebar-1">
+                                            <div class="panel-heading">
+                                                <h2>Billing information</h2>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-md-6 br">
+                                                        <strong>Alexander Smith</strong>
+                                                        <p>Bucharest, Romania</p>
+                                                        <p>Phone: +40 - 722.345.678</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="table">
+                                                            <div class="cell width-30">
+                                                                <img src="images/icons/visa.png" alt="">
+                                                            </div>
+                                                            <div class="cell" style="padding-left: 5px;">
+                                                                <strong>Visa</strong>
+                                                                <p>2233 - Exp 03/2023</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="panel panel-default panel-sidebar-1">
+                                    <div class="panel-heading">
+                                        <h2>Cart summary</h2>
+                                    </div>
+                                    <div class="panel-body bb">
+                                        <form role="form" class="form-light">
+                                            <label for="">Do you have a promo code?</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control left">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-base" type="button">Apply code</button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="panel-body bb">
+                                        <table class="table table-cart-subtotal">
+                                            <tbody>
+                                                <tr >
+                                                    <th>Cart Subtotal</th>
+                                                    <td class="text-right"><span class="amount">RON 2310</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Shipping and Handling</th>
+                                                    <td class="text-right">RON 0</td>      
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" class="no-padding">
+                                                        <div class="form-group">
+                                                            <form role="form" class="form-light">
+                                                                <select class="form-control">
+                                                                    <option>Standard: FREE Arrives in 10-20 days</option>
+                                                                    <option>Two day: 20 RON Arrives in 2-5 days</option>
+                                                                    <option>Next day: 35 RON Arrives in 1-2 days</option>
+                                                                </select>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Other taxes</th>
+                                                    <td class="text-right">RON 0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Total</th>
+                                                    <td class="text-right">RON 2310</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h5>Free shipping</h5>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="#" class="btn btn-lg btn-block btn-alt btn-icon btn-icon-right btn-icon-go pull-right">
+                                            <span>Place order</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

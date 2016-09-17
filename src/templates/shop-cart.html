@@ -1,0 +1,351 @@
+{% extends "base.html" %}
+
+{% block head_title %}Welcome | {{block.super}}{% endblock %}
+
+{% block content %}
+        <!-- Optional header components (ex: slider) -->
+            <!-- Importing slider content -->
+    <!-- include('includes.sliders.layer-slider-shop') -->
+    
+    <!-- MAIN CONTENT -->
+        <div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Cart</h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li class="active">Cart</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="slice bg-white bb">
+        <div class="wp-section shop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="well">
+                            <h4>Get free shipping on orders of $95+</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                        <!-- Cart table -->
+                        <table class="table table-cart table-responsive">
+                            <tbody>
+                                <tr>
+                                    <td><img src="images/prv/product-3.png" class="img-center" alt=""></td>
+                                    <td><a href="">Asus Ultra Notebook</a></td>
+                                    <td>RON 300.99</td>
+                                    <td>
+                                        <input type="number" name="cant" value="2" style="width:60px; text-align:center; margin-right:5px; height:34px;">
+                                    </td>
+                                    <td>RON 600.99</td>
+                                    <td class="remove-cell"><a href="" class="cart-remove" title="Remove item"><i class="fa fa-times-circle fa-2x"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/prv/product-2.png" class="img-center" alt=""></td>
+                                    <td><a href="">Microsoft Mouse</a></td>
+                                    <td>RON 300.99</td>
+                                    <td>
+                                        <input type="number" name="cant" value="2" style="width:60px; text-align:center; margin-right:5px; height:34px;">
+                                    </td>
+                                    <td>RON 600.99</td>
+                                    <td class="remove-cell"><a href="" class="cart-remove" title="Remove item"><i class="fa fa-times-circle fa-2x"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/prv/product-1.png" class="img-center" alt=""></td>
+                                    <td><a href="">Nikon Coolpix L320</a></td>
+                                    <td>RON 300.99</td>
+                                    <td>
+                                        <input type="number" name="cant" value="2" style="width:60px; text-align:center; margin-right:5px; height:34px;">
+                                    </td>
+                                    <td>RON 600.99</td>
+                                    <td class="remove-cell"><a href="" class="cart-remove" title="Remove item"><i class="fa fa-times-circle fa-2x"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="#" class="btn btn-base btn-icon btn-refresh">
+                                    <span>Update cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="panel panel-default panel-sidebar-1">
+                            <div class="panel-heading">
+                                <h2>Cart summary</h2>
+                            </div>
+                            <div class="panel-body bb">
+                                <form role="form" class="form-light">
+                                    <label for="">Do you have a promo code?</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control left">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-base" type="button">Apply code</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="panel-body bb">
+                                <table class="table table-cart-subtotal">
+                                    <tbody>
+                                        <tr >
+                                            <th>Cart Subtotal</th>
+                                            <td class="text-right"><span class="amount">RON 2310</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Shipping and Handling</th>
+                                            <td class="text-right">RON 0</td>      
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="no-padding">
+                                                <div class="form-group">
+                                                    <form role="form" class="form-light">
+                                                        <select class="form-control">
+                                                            <option>Standard: FREE Arrives in 10-20 days</option>
+                                                            <option>Two day: 20 RON Arrives in 2-5 days</option>
+                                                            <option>Next day: 35 RON Arrives in 1-2 days</option>
+                                                        </select>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Other taxes</th>
+                                            <td class="text-right">RON 0</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Total</th>
+                                            <td class="text-right">RON 2310</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="panel-body">
+                                <h5>Free shipping</h5>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="#" class="btn btn-lg btn-block btn-alt btn-icon btn-icon-right btn-icon-go pull-right">
+                                    <span>Proceed to checkout</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice light-gray bb">
+        <div class="wp-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="aside-feature square">
+                            <div class="row">
+                                <h3 class="outer-title">Free shipping</h3>
+                                <div class="col-md-3">
+                                    <div class="icon-feature">
+                                        <i class="fa fa-plane"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="aside-feature square">
+                            <div class="row">
+                                <h3 class="outer-title">Online support</h3>
+                                <div class="col-md-3">
+                                    <div class="icon-feature">
+                                        <i class="fa fa-headphones"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="aside-feature square">
+                            <div class="row">
+                                <h3 class="outer-title">Money back guarantee</h3>
+                                <div class="col-md-3">
+                                    <div class="icon-feature">
+                                        <i class="fa fa-euro"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice bg-white bb">
+        <div class="wp-section">
+            <div class="container">
+                <div class="section-title-wr">
+                    <h3 class="section-title left"><span>You might also like</span></h3>
+                </div>
+                <div class="no-margin owl-carousel owl-carousel-4" data-owl-pagination="smth">
+                    <div class="item">
+                        <div class="wp-block product">
+                            <figure>
+                                <img alt="" src="images/prv/product-1.jpg" class="img-responsive img-center">
+                                <span class="ribbon base">New</span>
+                            </figure>
+                            <h2 class="product-title"><a href="">Nikon Coolpix L320</a></h2>
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                            </p>
+                            <div class="wp-block-footer">
+                                <span class="price pull-left">$233.33</span>
+                                <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                    <span>Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="wp-block product">
+                            <figure>
+                                <img alt="" src="images/prv/product-2.jpg" class="img-responsive img-center">
+                                <span class="ribbon orange">Sale</span>
+                            </figure>
+                            <h2 class="product-title"><a href="">Samsung Galaxy S4</a></h2>
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                            </p>
+                            <div class="wp-block-footer">
+                                <span class="price discount pull-left">$333.89</span>
+                                <span class="price pull-left">$233.33</span>
+                                <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                    <span>Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="wp-block product">
+                            <figure>
+                                <img alt="" src="images/prv/product-3.jpg" class="img-responsive img-center">
+                            </figure>
+                            <h2 class="product-title"><a href="">Asus Ultra Notebook</a></h2>
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                            </p>
+                            <div class="wp-block-footer">
+                                <span class="price pull-left">$233.33</span>
+                                <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                    <span>Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="wp-block product">
+                            <figure>
+                                <img alt="" src="images/prv/product-4.jpg" class="img-responsive img-center">
+                                <span class="ribbon red">Special</span>
+                            </figure>
+                            <h2 class="product-title"><a href="">PC mouse Microsoft</a></h2>
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                            </p>
+                            <div class="wp-block-footer">
+                                <span class="price pull-left">$233.33</span>
+                                <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                    <span>Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="wp-block product">
+                            <figure>
+                                <img alt="" src="images/prv/product-1.jpg" class="img-responsive img-center">
+                                <span class="ribbon base-alt">New</span>
+                            </figure>
+                            <h2 class="product-title"><a href="">Nikon Coolpix L320</a></h2>
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                            </p>
+                            <div class="wp-block-footer">
+                                <span class="price pull-left">$233.33</span>
+                                <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                    <span>Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="wp-block product">
+                            <figure>
+                                <img alt="" src="images/prv/product-2.jpg" class="img-responsive img-center">
+                                <span class="ribbon yellow">Sale</span>
+                            </figure>
+                            <h2 class="product-title"><a href="">Samsung Galaxy S4</a></h2>
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                            </p>
+                            <div class="wp-block-footer">
+                                <span class="price discount pull-left">$333.89</span>
+                                <span class="price pull-left">$233.33</span>
+                                <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                    <span>Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="wp-block product">
+                            <figure>
+                                <img alt="" src="images/prv/product-3.jpg" class="img-responsive img-center">
+                            </figure>
+                            <h2 class="product-title"><a href="">Asus Ultra Notebook</a></h2>
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                            </p>
+                            <div class="wp-block-footer">
+                                <span class="price pull-left">$233.33</span>
+                                <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                    <span>Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+
+{% block head_title %}Welcome | {{block.super}}{% endblock %}
+
+{% block content %}
+        <!-- Optional header components (ex: slider) -->
+            <!-- Importing slider content -->
+    <!-- include('includes.sliders.layer-slider-shop') -->
+    
+    <!-- MAIN CONTENT -->
+        <div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Billing information</h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Checkout progress</a></li>
+                        <li class="active">Billing information</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="slice bg-white">
+        <div class="wp-section shop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Checkout process - Progress bar -->
+                        <ol class="progtrckr hidden-xs" data-progtrckr-steps="6">
+                            <li class="progtrckr-done">Checkout method</li>
+                            <li class="progtrckr-done">Shipping</li>
+                            <li class="progtrckr-done">Payment method</li>
+                            <li class="progtrckr-todo">Order review</li>
+                            <li class="progtrckr-todo">Delivered</li>
+                        </ol>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="wp-block default user-form payment-form">    
+                                    <div class="form-header">
+                                        <h2>Payment information</h2>
+                                    </div>
+                                    <div class="form-body">
+                                        <form action="/" class="sky-form" method="post" id="example-form" style="display: none;">
+                                            <fieldset>
+                                                <div class="form-row">
+                                                    <section>
+                                                        <label for="name" class="stripeLabel">Your Name</label>
+                                                        <input type="text" name="name" placeholder="Name on card" class="required" />
+                                                    </section>
+                                                </div>            
+                                        
+                                                <div class="form-row">
+                                                    <label for="email">E-mail Address</label>
+                                                    <input type="text" name="email" class="required" />
+                                                </div>            
+                                        
+                                                <div class="form-row">
+                                                    <section class="col-md-10">
+                                                        <label>Card Number</label>
+                                                        <input type="text" name="card" id="card" maxlength="20" autocomplete="off" class="card-number stripe-sensitive required" />
+                                                    </section>
+                                                </div>
+                                                
+                                                <div class="form-row">
+                                                    <section class="col-md-2">
+                                                        <label>CVC</label>
+                                                        <input type="text" name="cvv" id="cvv" maxlength="4" autocomplete="off" class="card-cvc stripe-sensitive required" />
+                                                    </section>
+                                                </div>
+                                                
+                                                <div class="form-row">
+                                                    <div class="col-md-3">
+                                                        <label class="label">Expiration</label>
+                                                    </div>
+                                                    <div class="expiry-wrapper">
+                                                        <select class="card-expiry-month stripe-sensitive required">
+                                                        </select>
+                                                        <script type="text/javascript">
+                                                            var select = $(".card-expiry-month"),
+                                                                month = new Date().getMonth() + 1;
+                                                            for (var i = 1; i <= 12; i++) {
+                                                                select.append($("<option value='"+i+"' "+(month === i ? "selected" : "")+">"+i+"</option>"))
+                                                            }
+                                                        </script>
+                                                        <span> / </span>
+                                                        <select class="card-expiry-year stripe-sensitive required"></select>
+                                                        <script type="text/javascript">
+                                                            var select = $(".card-expiry-year"),
+                                                                year = new Date().getFullYear();
+                                                            for (var i = 0; i < 12; i++) {
+                                                                select.append($("<option value='"+(i + year)+"' "+(i === 0 ? "selected" : "")+">"+(i + year)+"</option>"))
+                                                            }
+                                                        </script>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+                                            <button type="submit" name="submit-button">Submit</button>
+                                            <span class="payment-errors"></span>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- 
+                            The easiest way to indicate that the form requires JavaScript is to show
+                            the form with JavaScript (otherwise it will not render). You can add a
+                            helpful message in a noscript to indicate that users should enable JS.
+                        -->
+                            <script>if (window.Stripe) $("#example-form").show()</script>
+                            <noscript><p>JavaScript is required for the registration form.</p></noscript>
+                            <div class="col-md-4">
+                                <div class="panel panel-default panel-sidebar-1">
+                                    <div class="panel-heading">
+                                        <h2>Cart summary</h2>
+                                    </div>
+                                    <div class="panel-body bb">
+                                        <form role="form" class="form-light">
+                                            <label for="">Do you have a promo code?</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control left">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-base" type="button">Apply code</button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="panel-body bb">
+                                        <table class="table table-cart-subtotal">
+                                            <tbody>
+                                                <tr >
+                                                    <th>Cart Subtotal</th>
+                                                    <td class="text-right"><span class="amount">RON 2310</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Shipping and Handling</th>
+                                                    <td class="text-right">RON 0</td>      
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" class="no-padding">
+                                                        <div class="form-group">
+                                                            <form role="form" class="form-light">
+                                                                <select class="form-control">
+                                                                    <option>Standard: FREE Arrives in 10-20 days</option>
+                                                                    <option>Two day: 20 RON Arrives in 2-5 days</option>
+                                                                    <option>Next day: 35 RON Arrives in 1-2 days</option>
+                                                                </select>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Other taxes</th>
+                                                    <td class="text-right">RON 0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Total</th>
+                                                    <td class="text-right">RON 2310</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h5>Free shipping</h5>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="#" class="btn btn-lg btn-block btn-alt btn-icon btn-icon-right btn-icon-go pull-right">
+                                            <span>Go to next step</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

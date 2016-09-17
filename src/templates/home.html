@@ -1,0 +1,543 @@
+
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block head_title %}Welcome | {{block.super}}{% endblock %}
+
+{% block content %}
+        <!-- Optional header components (ex: slider) -->
+        	<!-- Importing slider content -->
+<section id="slider-wrapper" class="layer-slider-wrapper layer-slider-dynamic">
+    <div id="layerslider" style="width:100%;">   
+        <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+            <!-- slide background -->          
+            <img src="{% static 'img/backgrounds/full-bg-18.png' %}" class="ls-bg" style="width: 100%;"  alt="Slide background"/>
+            
+            <!-- Left Text -->
+            <h3 class="ls-l title text-wrapped alpha strong text-uppercase text-center" style="top:35%; left:100px; padding: 30px;" data-ls="offsetxin:-250;offsetyin:0;durationin:1000;delayin:500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                U-Labs
+            </h3>
+
+            <p class="ls-l text-standard text-wrapped base" style="width:500px; top:58%; left:100px; padding: 30px;" data-ls="offsetxin:-250;offsetyin:-;durationin:1000;delayin:1000;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                Where dreams become reality.
+            </p>
+        </div>
+
+                <!-- Slide 2 -->
+        <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+            <!-- slide background -->
+            <img src="{% static 'img/backgrounds/full-bg-9.png' %}" class="ls-bg" style="width: 100%;" alt="Slide background"/>
+            
+            <!-- Left Text -->
+            <h3 class="ls-l title text-normal" style="width:600px; top:35%; left:80px;" data-ls="offsetxin:0;offsetyin:250;durationin:1000;delayin:500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                The secret of getting ahead is <span class="strong-600">getting</span> <span class="strong-600 c-pink">started</span></strong>
+            </h3>
+
+            <p class="ls-l text-standard" style="width:500px; top:50%; left:80px;" data-ls="offsetxin:0;offsetyin:250;durationin:1000;delayin:1000;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+            U-labs is ready to be part of your project. Let's get started
+            </p>
+
+            <a href="" class="btn btn-base btn-lg ls-l" style="top:60%; left:80px;" data-ls="offsetxin:0;offsetyin:250;durationin:1500;delayin:1500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;" target="_blank">
+                Learn more
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- MAIN CONTENT -->
+    <section class="slice bb">
+        <div class="wp-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 wp-block no-space arrow-right base no-margin">
+                        <div class="wp-block-body">
+                            <div class="img-icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <h1>Learn to grow</h1>
+                            <p class="text-center">
+                            A mental gym converging experiential learners, through iterative interactions and revolutionary design for entrepreneurial and technical discovery, while experimenting the unusual.
+                            </p> 
+                        </div>
+                    </div>
+                    <div class="col-md-4 wp-block no-space arrow-right light no-margin">
+                        <div class="wp-block-body">
+                            <div class="img-icon">
+                                <i class="fa fa-bicycle"></i>
+                            </div>
+                            <h1>Experience to know</h1>
+                            <p class="text-center">
+                            A renewal hub for mind, body and soul through classes geared toward attaining higher self and opening new channels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wp-block no-space pink no-margin">
+                        <div class="wp-block-body">
+                            <div class="img-icon">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <h1>Share to everyone</h1>
+                            <p class="text-center">
+                             A place to update on the newest & most exciting inventions through cross pollinating ideas with their peers and across peer groups.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice light-gray bb">
+        <div class="wp-section">
+            <div class="container">
+                <div class="section-title-wr">
+                    <h3 class="section-title left">
+                        <span>What do we offer</span>
+                        <small>Space . Stuff . Garden . People</small>
+                    </h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="icon-block icon-block-2">
+                            <div class="icon-block-item base">
+                                <i class="fa fa-list-alt "></i>
+                            </div>
+                            <div class="icon-block-body">
+                                <h4 class="">Endless possibilities</h4>
+                                <p>Did i mention that you get to build STUFF!, stuff that you dream up or that you wonder if they practically possible? Come find out!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-6 ">
+                        <div class="icon-block icon-block-2">
+                            <div class="icon-block-item base">
+                                <i class="fa fa-desktop"></i>
+                            </div>
+                            <div class="icon-block-body">
+                                <h4 class="">A wide variety of the latest equipment</h4>
+                                <p>Tools ranging from 3D printers, rasberry pi's or pies and leap motion developing platforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="icon-block icon-block-2">
+                            <div class="icon-block-item base">
+                                <i class="fa fa-camera-retro"></i>
+                            </div>
+                            <div class="icon-block-body">
+                                <h4 class="">Great environment</h4>
+                                <p>Vibrant atmosphere adorned with an outdoor zen garden and a 5000 sq ft co-working space, filled with makers and designers!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-6 ">
+                        <div class="icon-block icon-block-2">
+                            <div class="icon-block-item base">
+                                <i class="fa fa-coffee"></i>
+                            </div>
+                            <div class="icon-block-body">
+                                <h4 class="">Super friendly staff</h4>
+                                <p>Our staff is here for you! They are volunteers and makers who share a similar passion. Feel free to reach out to any one of us.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice animate-hover-slide bg-white bb">
+        <div class="wp-section">
+            <div class="container">
+                <div class="section-title-wr">
+                    <h3 class="section-title left">
+                        <span>Latest courses</span>
+                        <small>Checkout the classes link for our detailed calendar</small>
+                    </h3>
+                </div>
+                <div class="owl-carousel owl-carousel-3">
+                    <div class="item">
+                        <div class="wp-block default">
+                            <div class="figure">
+                                <img alt="" src="{% static 'img/prv/school/school-1.jpg' %}" class="img-responsive">
+                                <span class="wp-block-date-over alpha"><strong>Sep 10</strong></span>
+                                <div class="figcaption bg-base"></div>
+                                <div class="figcaption-btn">
+                                    <a href="{% static 'img/prv/col-img-1.jpg' %}" class="btn btn-xs btn-b-white theater"><i class="fa fa-plus-circle"></i> Zoom</a>
+                                    <a href="#" class="btn btn-xs btn-b-white"><i class="fa fa-link"></i> View</a>
+                                </div>
+                            </div>
+                            <div class="wp-block-body bb">
+                                <h2 class="title">Web Development</h2>
+                                <p>
+                                How to build your own personal web page.
+                                </p>
+                            </div>
+                            <ul class="aux-info-cells">
+                                <li><i class="fa fa-calendar"></i> Sep 10</li>
+                                <li><i class="fa fa-clock-o"></i> 10:00 AM</li>
+                                <li><i class="fa fa-user"></i> <a href="#">A. Smith</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="wp-block default">
+                            <div class="figure">
+                                <img alt="" src="{% static 'img/prv/school/school-6.jpg' %}" class="img-responsive">
+                                <span class="wp-block-date-over alpha"><strong>Sep 23</strong></span>
+                                <div class="figcaption bg-base"></div>
+                                <div class="figcaption-btn">
+                                    <a href="{% static 'img/prv/col-img-2.jpg' %}" class="btn btn-xs btn-b-white theater"><i class="fa fa-plus-circle"></i> Zoom</a>
+                                    <a href="#" class="btn btn-xs btn-b-white"><i class="fa fa-link"></i> View</a>
+                                </div>
+                            </div>
+                            <div class="wp-block-body bb">
+                                <h2 class="title">Jewelry and Art</h2>
+                                <p>
+                                Mordern or antique, What's your flavor?
+                                </p>
+                            </div>
+                            <ul class="aux-info-cells">
+                                <li><i class="fa fa-calendar"></i> Sep 13</li>
+                                <li><i class="fa fa-clock-o"></i> 8:30 AM</li>
+                                <li><i class="fa fa-user"></i> <a href="#">A. Smith</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="wp-block default">
+                            <div class="figure">
+                                <img alt="" src="{% static 'img/prv/school/school-2.jpg' %}" class="img-responsive">
+                                <span class="wp-block-date-over alpha"><strong>Sep 25</strong></span>
+                                <div class="figcaption bg-base"></div>
+                                <div class="figcaption-btn">
+                                    <a href="{% static 'img/prv/col-img-3.jpg' %}" class="btn btn-xs btn-b-white theater"><i class="fa fa-plus-circle"></i> Zoom</a>
+                                    <a href="#" class="btn btn-xs btn-b-white"><i class="fa fa-link"></i> View</a>
+                                </div>
+                            </div>
+                            <div class="wp-block-body bb">
+                                <h2 class="title">3D printing and Woodworking</h2>
+                                <p>
+                                Remember when you melted plastic on the stove as a kid? You can now do it as a pro. If you like to play with saw dust, come play with loads of it.
+                                </p>
+                            </div>
+                            <ul class="aux-info-cells">
+                                <li><i class="fa fa-calendar"></i> Sep 10</li>
+                                <li><i class="fa fa-clock-o"></i> 12:00 PM</li>
+                                <li><i class="fa fa-user"></i> <a href="#">A. Smith</a></li>
+                            </ul>
+                        </div>
+                    </div>        
+
+                    <div class="item">
+                        <div class="wp-block default">
+                            <div class="figure">
+                                <img alt="" src="{% static 'img/prv/school/school-3.jpg' %}" class="img-responsive">
+                                <span class="wp-block-date-over alpha"><strong>Sep 26</strong></span>
+                                <div class="figcaption bg-base"></div>
+                                <div class="figcaption-btn">
+                                    <a href="{% static 'img/prv/col-img-3.jpg' %}" class="btn btn-xs btn-b-white theater"><i class="fa fa-plus-circle"></i> Zoom</a>
+                                    <a href="#" class="btn btn-xs btn-b-white"><i class="fa fa-link"></i> View</a>
+                                </div>
+                            </div>
+                            <div class="wp-block-body bb">
+                                <h2 class="title">Professional photography</h2>
+                                <p>
+                                All we now talk about is selfies. Ever thought about taking a reverse selfie? Maybe even blog about it?
+                                </p>
+                            </div>
+                            <ul class="aux-info-cells">
+                                <li><i class="fa fa-calendar"></i> Sep 26</li>
+                                <li><i class="fa fa-clock-o"></i> 8:30 AM</li>
+                                <li><i class="fa fa-user"></i> <a href="#">A. Smith</a></li>
+                            </ul>
+                        </div>
+                    </div>       
+
+                    <div class="item">
+                        <div class="wp-block default">
+                            <div class="figure">
+                                <img alt="" src="{% static 'img/prv/school/school-4.jpg' %}" class="img-responsive">
+                                <span class="wp-block-date-over alpha"><strong>Sep 28</strong></span>
+                                <div class="figcaption bg-base"></div>
+                                <div class="figcaption-btn">
+                                    <a href="{% static 'img/prv/col-img-3.jpg' %}" class="btn btn-xs btn-b-white theater"><i class="fa fa-plus-circle"></i> Zoom</a>
+                                    <a href="#" class="btn btn-xs btn-b-white"><i class="fa fa-link"></i> View</a>
+                                </div>
+                            </div>
+                            <div class="wp-block-body bb">
+                                <h2 class="title">Rapid Prototyping?</h2>
+                                <p>
+                                Once again, you get to build and play with stuff! Lots of it!
+                                </p>
+                            </div>
+                            <ul class="aux-info-cells">
+                                <li><i class="fa fa-calendar"></i> Sep 28</li>
+                                <li><i class="fa fa-clock-o"></i> 8:00 AM</li>
+                                <li><i class="fa fa-user"></i> <a href="#">A. Smith</a></li>
+                            </ul>
+                        </div>
+                    </div>       
+
+                    <div class="item">
+                        <div class="wp-block default">
+                            <div class="figure">
+                                <img alt="" src="{% static 'img/prv/school/school-5.jpg' %}" class="img-responsive">
+                                <span class="wp-block-date-over alpha"><strong>Sep 20</strong></span>
+                                <div class="figcaption bg-base"></div>
+                                <div class="figcaption-btn">
+                                    <a href="{% static 'img/prv/col-img-3.jpg' %}" class="btn btn-xs btn-b-white theater"><i class="fa fa-plus-circle"></i> Zoom</a>
+                                    <a href="#" class="btn btn-xs btn-b-white"><i class="fa fa-link"></i> View</a>
+                                </div>
+                            </div>
+                            <div class="wp-block-body bb">
+                                <h2 class="title">Design for the Region</h2>
+                                <p>
+                                Think of anything you would like to improve about your city, neighborhood or yard. Ever thought about collaborating with other stakeholders to make it happen?
+                                </p>
+                            </div>
+                            <ul class="aux-info-cells">
+                                <li><i class="fa fa-calendar"></i> Jul 220</li>
+                                <li><i class="fa fa-clock-o"></i> 10:30 AM</li>
+                                <li><i class="fa fa-user"></i> <a href="#">A. Smith</a></li>
+                            </ul>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice bg-white">
+        <div class="wp-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="section-title-wr">
+                    	   <h3 class="section-title left"><span>What's happening</span></h3>
+                        </div>
+                    	<ul class="bullet">
+                            <li>
+                                <figure class="base">1</figure>
+                                <p>Drean stuff.</p>
+                            </li>
+                            <li>
+                                <figure class="base">2</figure>
+                                <p>Think of stuff.</p>
+                            </li>
+                            <li>
+                                <figure class="base">3</figure>
+                                <p>Collaborate about stuff.</p>
+                            </li>
+                            <li>
+                                <figure class="base">4</figure>
+                                <p>and then......</p>
+                            </li>
+                            <li>
+                                <figure class="base">5</figure>
+                                <p>wait for it.........</p>
+                            </li>
+                            <li>
+                                <figure class="base">6</figure>
+                                <p>Make stuff.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="section-title-wr">
+                    	   <h3 class="section-title left"><span>News</span></h3>
+                        </div>
+                    	<div class="row">
+                            <div class="col-md-12">
+                                <div class="wp-block article list">
+                                    <div class="article-image">
+                                        <img src="{% static 'img/prv/magazine/magazine-small-7.jpg' %}" alt="">
+                                    </div>
+                                    <div class="wp-block-body">
+                                        <h3 class="title">
+                                            <a href="#" hidefocus="true">Zen Garden</a>
+                                        </h3>
+                                        <p>
+                                        Enjoy a sweet and tasty vegetable or two under a black walnut tree, with beach sand under your feet<small><a href="#" title="Continue reading">[...]</a></small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="widget">
+                                    <div class="panel-group" id="accordion">
+
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
+                                                    Gargantua Global Domination Summit Soiree
+                                                  </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+                                                <div class="panel-body">
+                                                                        <h4 class="panel-title">
+                                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="">
+                                                                                COCKTAILS|DINNER|PERFORMANCE|LIVE AUCTION|AFTER PARTY
+                                                                            </a>
+                                                                        </h4>
+                                                                            <p>
+                                                                            Supporting ULab's Education Programs
+                                                                            <br>
+                                                                           Our annual maker, hacker, creator summit takes place in a special evening celebrating art, industry, creative fire, and community.  Join us in recognizing the vision and innovation of honorees from different parts of the world.  
+                                                                            <br>
+                                                                           In addition to an epicurean dinner and one-of-a-kind live art auction, our guests will be treated to a world premiere performance by visting artists that merge tradition with technology.<small><a href="#" title="Continue reading">[...]</a></small>
+                                                                            </p>
+                                                                            <br>
+                                                                            WAIT LIST
+                                                                            <br>
+                                                                            This event is SOLD OUT. If you would like to join a wait list in case of any cancellations, please call 806-239-4700.
+                                                                            <br>
+                                                                            Soiree Sponsor Levels
+                                                                            <br>
+                                                                            <ul>
+                                                                                <li>Gold</li>
+                                                                                <li>Silver</li>
+                                                                                <li>Bronze</li>
+                                                                            </ul>
+                                                                            Brouchure Info|Page|Tickets
+                                                                            <br>
+                                                                            Hot Coutoure Friday Decemeber, 4th 7-11pm.  Price includes three runway walks @ 7:30, 8:30, and 9:30.
+                                                                            <br>
+                                                                            VIP $120
+                                                                            <br>
+                                                                            General Admission $40
+                                                                            <br>
+                                                                            Event Location and directions 3843 50th St. Lubbock, TX 79413.
+                                                                            <br>
+                                                </div>
+                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="wp-block article list">
+                                    <div class="article-image">
+                                        <img src="{% static 'img/prv/magazine/magazine-small-2.jpg' %}" alt="">
+                                    </div>
+                                    <div class="wp-block-body">
+                                        <h3 class="title">
+                                            <a href="#" hidefocus="true">Leap for Lubbock</a>
+                                        </h3>
+                                        <p>
+                                        Ever though about buidling holographic models with your hands? Me too. Please come show me how <small><a href="#" title="Continue reading">[...]</a></small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="section-title-wr">
+                    	   <h3 class="section-title left"><span>Hot spot</span></h3>
+                        </div>	
+
+                        <div class="">
+                            <div class="wp-block article grid bb">
+                                <div class="article-image">
+                                    <img src="{% static 'img/prv/magazine/magazine-small-6.jpg' %}" alt="">
+                                </div>
+                                <span class="article-category">Students</span>
+                                <h3 class="title">
+                                    <a href="" hidefocus="true">What does Isaiah have up his sleeve?</a>
+                                </h3>
+                                <p>
+                                So much stuff.
+                                </p>
+                            </div>
+
+                            <div class="wp-block article grid bb">
+                                <h3 class="title">
+                                    <a href="" hidefocus="true">So Sad, Sam is Summer Sick....</a>
+                                </h3>
+                                <p>
+                                Stuff.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="section-title-wr">
+                    	   <h3 class="section-title left"><span>Quick links</span></h3>
+                        </div>
+
+                    	<div class="widget">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                  	<div class="panel-heading">
+    	                                <h4 class="panel-title">
+    	                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
+    	                                    Web design
+    	                                  </a>
+    	                                </h4>
+                                  	</div>
+                                  	<div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+    	                                <div class="panel-body">
+    	                                	<p>
+    	                                  	Come learn about how to use front-end tools and frameworks that you could use to build cool and responsive web applications. You may be an expert interested in sharing and maybe gain a new perspective or a curious learner eager to learn how the magic of web design happens!
+    	                               		</p>
+    	                                </div>
+    	                            </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  	<div class="panel-heading">
+                                    	<h4 class="panel-title">
+                                      		<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+                                        		Software development
+                                      		</a>
+                                    	</h4>
+                                  	</div>
+                                  	<div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;">
+                                    	<div class="panel-body">
+                                      		<p>
+                                      			Seriously, the name itself is a cool enough reason to learn more. How do we make information accessible to people in different continents. Better yet, how do we send data to other people in a safe and secure manner. Or, how about we crawl around the internet looking for all the waldos'.
+                                    		</p>
+                                    	</div>
+                                  	</div>
+                                </div>
+                                <div class="panel panel-default">
+                                  	<div class="panel-heading">
+                                    	<h4 class="panel-title">
+                                      		<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="">
+                                        		Search engine optimization
+                                      		</a>
+                                    	</h4>
+                                  	</div>
+                                  	<div id="collapseThree" class="panel-collapse in" style="height: auto;">
+                                    	<div class="panel-body">
+                                      		<p>
+                                      		Have you ever wondered why when you type in bond to search for Gold Bond, a James Bond episode is the first thing that comes up... Yeah I have wondered that too! Let's attend an SEO class so that we can both find out, or if you know, you can come and educate us who don't know.
+                                    		</p>
+                                    	</div>
+                                  	</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

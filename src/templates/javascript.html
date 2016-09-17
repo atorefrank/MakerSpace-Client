@@ -1,0 +1,79 @@
+{% load staticfiles %}  
+<!-- Required JS -->
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+<script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- Essentials -->
+<script src="{% static 'js/modernizr.custom.js' %}"></script>
+<script src="{% static 'js/jquery.mousewheel-3.0.6.pack.js' %}"></script>
+<script src="{% static 'js/jquery.easing.js' %}"></script>
+<script src="{% static 'js/jquery.metadata.js' %}"></script>
+<script src="{% static 'js/jquery.hoverup.js' %}"></script>
+<script src="{% static 'js/jquery.hoverdir.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.js' %}"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.min.js"></script>
+<script src="http://fast.wistia.net/assets/external/E-v1.js"></script> 
+
+
+<!-- Boomerang mobile nav - Optional  -->
+<script src="{% static 'js/jquery.dlmenu.js' %}"></script>
+<script src="{% static 'js/jquery.dlmenu.autofill.js' %}"></script>
+
+<!-- Forms -->
+<script src="{% static 'js/jquery.powerful-placeholder.min.js' %}"></script> 
+<script src="{% static 'js/cusel.min.js' %}"></script>
+<script src="{% static 'js/jquery.form.min.js' %}"></script>
+<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/jquery.maskedinput.min.js' %}"></script>
+<script src="{% static 'js/jquery.modal.js' %}"></script>
+
+<!-- Assets -->
+<script src="{% static 'js/bootstrap-hover-dropdown.min.js' %}"></script>
+<script src="{% static 'js/jquery.ui.totop.min.js' %}"></script>
+<script src="{% static 'js/jquery.mixitup.js' %}"></script>
+<script src="{% static 'js/jquery.mixitup.init.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js?v=2.1.5' %}"></script>
+<script src="{% static 'js/waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/jquery.easypiechart.js' %}"></script>
+<script src="{% static 'js/rrssb.min.js' %}"></script>
+<script src="{% static 'js/jquery.nouislider.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+<script src="{% static 'js/tooltip.js' %}"></script>
+<script src="{% static 'js/popover.js' %}"></script>
+
+<!-- Sripts for individual pages, depending on what plug-ins are used -->
+<script src="{% static 'js/greensock.js' %}"></script>
+<script src="{% static 'js/layerslider.transitions.js' %}"></script>
+<script src="{% static 'js/layerslider.kreaturamedia.jquery.js' %}"></script>
+<!-- Initializing the slider -->
+<script>
+{% block jquery %}
+    jQuery("#layerslider").layerSlider({
+        pauseOnHover: true,
+        autoPlayVideos: false,
+        skinsPath: "{% static 'skins' %}",
+        responsive: false,
+        responsiveUnder: 1280,
+        layersContainer: 1280,
+        skin: 'borderlessdark3d',
+        hoverPrevNext: true,
+    });
+
+{% endblock %}
+</script>
+
+
+<!-- Boomerang App JS -->
+<script src="{% static 'js/wp.app.js' %}"></script>
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js' %}"></script>
+    <script src="js/respond.min.js' %}"></script>
+<![endif]-->
+<!-- Latest compiled and minified JavaScript -->
+<script src="{% static 'js/jquery.cookie.js' %}"></script>
+<script src="{% static 'js/wp.switcher.js' %}"></script>
+<script src="{% static 'js/wp.ga.js' %}"></script>

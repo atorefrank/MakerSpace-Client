@@ -1,0 +1,266 @@
+{% extends "base.html" %}
+
+{% block head_title %}Welcome | {{block.super}}{% endblock %}
+
+{% block content %}
+        <!-- Optional header components (ex: slider) -->
+            <!-- Importing slider content -->
+    <!-- include('includes.sliders.layer-slider-shop') -->
+    
+    <!-- MAIN CONTENT -->
+        <div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Shipping information</h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Checkout progress</a></li>
+                        <li class="active">Shipping information</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="slice bg-white">
+        <div class="wp-section shop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Checkout process - Progress bar -->
+                        <ol class="progtrckr hidden-xs" data-progtrckr-steps="6">
+                            <li class="progtrckr-done">Checkout method</li>
+                            <li class="progtrckr-done">Shipping</li>
+                            <li class="progtrckr-todo">Payment method</li>
+                            <li class="progtrckr-todo">Order review</li>
+                            <li class="progtrckr-todo">Delivered</li>
+                        </ol>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="wp-block default user-form">    
+                                    <div class="form-header">
+                                        <h2>Shipping information</h2>
+                                    </div>
+                                    <div class="form-body">
+                                        <form action="" id="frmRegister" class="sky-form">                                    
+                                            <fieldset class="no-padding">    
+                                                <section>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" name="subscription" id="subscription">
+                                                        <i></i>Use billing address
+                                                    </label>
+                                                <section> 
+                                                <hr>            
+                                                <section>
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="form-group">
+                                                                <label class="label">Username</label>
+                                                                <label class="input">
+                                                                    <i class="icon-append fa fa-user"></i>
+                                                                    <input type="text" name="username" placeholder="">
+                                                                    <b class="tooltip tooltip-bottom-right">Needed to enter the website</b>
+                                                                </label>
+                                                            </div>               
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="form-group">
+                                                                <div class="form-group">
+                                                                    <label class="label">E-mail</label>
+                                                                    <label class="input">
+                                                                        <i class="icon-append fa fa-envelope-o"></i>
+                                                                        <input type="email" name="email" placeholder="">
+                                                                        <b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+                                                                    </label>
+                                                                </div>  
+                                                            </div>               
+                                                        </div>
+                                                    </div>   
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="label">Password</label>
+                                                                <label class="input">
+                                                                    <i class="icon-append fa fa-lock"></i>
+                                                                    <input type="text" name="username" placeholder="">
+                                                                    <b class="tooltip tooltip-bottom-right">Needed to enter the website</b>
+                                                                </label>
+                                                            </div>               
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="label">Password</label>
+                                                                <label class="input">
+                                                                    <i class="icon-append fa fa-lock"></i>
+                                                                    <input type="email" name="email" placeholder="">
+                                                                    <b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+                                                                </label>
+                                                            </div>               
+                                                        </div>
+                                                    </div>   
+                                                </section>
+                                                <hr>
+                                                <section>
+                                                    <div class="row">
+                                                        <section class="col-xs-6">
+                                                            <label class="label">First name</label>
+                                                            <label class="input">
+                                                                <i class="icon-append fa fa-user"></i>
+                                                                <input type="text" name="fname" placeholder="">
+                                                            </label>
+                                                        </section>
+                                                        <section class="col-xs-6">
+                                                            <label class="label">Last name</label>
+                                                            <label class="input">
+                                                                <i class="icon-append fa fa-user"></i>
+                                                                <input type="text" name="lname" placeholder="">
+                                                            </label>
+                                                        </section>
+                                                    </div> 
+                                                    <div class="row">
+                                                        <section class="col-xs-6">
+                                                            <label class="label">Company</label>
+                                                            <label class="input">
+                                                                <i class="icon-append fa fa-building"></i>
+                                                                <input type="email" name="email" placeholder="">
+                                                            </label>
+                                                        </section>
+                                                        <section class="col-xs-6">
+                                                            <label class="label">Phone</label>
+                                                            <label class="input">
+                                                                <i class="icon-append fa fa-phone"></i>
+                                                                <input type="tel" name="phone" placeholder="">
+                                                            </label>
+                                                        </section>
+                                                    </div>
+                                                </section>
+                                            </fieldset>  
+
+                                            <fieldset>
+                                                <div class="row">
+                                                    <section class="col-xs-5">
+                                                        <label class="select">
+                                                            <select name="country">
+                                                                <option value="0" selected="" disabled="">Country</option>
+                                                                <option value="244">Aaland Islands</option>
+                                                                <option value="1">Afghanistan</option>
+                                                                <option value="2">Albania</option>
+                                                                <option value="3">Algeria</option>
+                                                                <option value="4">American Samoa</option>
+                                                                <option value="5">Andorra</option>
+                                                                <option value="6">Angola</option>
+                                                                <option value="7">Anguilla</option>
+                                                                <option value="8">Antarctica</option>
+                                                                <option value="9">Antigua and Barbuda</option>
+                                                                <option value="10">Argentina</option>
+                                                            </select>
+                                                            <i></i>
+                                                        </label>
+                                                    </section>
+                                                    
+                                                    <section class="col-xs-4">
+                                                        <label class="input">
+                                                            <input type="text" name="city" placeholder="City">
+                                                        </label>
+                                                    </section>
+                                                    
+                                                    <section class="col-xs-3">
+                                                        <label class="input">
+                                                            <input type="text" name="code" placeholder="Post code">
+                                                        </label>
+                                                    </section>
+                                                </div>
+                                                <section>
+                                                    <label for="file" class="input">
+                                                        <input type="text" name="address" placeholder="Address">
+                                                    </label>
+                                                </section>
+                                                
+                                                <section>
+                                                    <label class="textarea">
+                                                        <textarea rows="3" name="info" placeholder="Additional info"></textarea>
+                                                    </label>
+                                                </section>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="panel panel-default panel-sidebar-1">
+                                    <div class="panel-heading">
+                                        <h2>Cart summary</h2>
+                                    </div>
+                                    <div class="panel-body bb">
+                                        <form role="form" class="form-light">
+                                            <label for="">Do you have a promo code?</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control left">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-base" type="button">Apply code</button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="panel-body bb">
+                                        <table class="table table-cart-subtotal">
+                                            <tbody>
+                                                <tr >
+                                                    <th>Cart Subtotal</th>
+                                                    <td class="text-right"><span class="amount">RON 2310</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Shipping and Handling</th>
+                                                    <td class="text-right">RON 0</td>      
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" class="no-padding">
+                                                        <div class="form-group">
+                                                            <form role="form" class="form-light">
+                                                                <select class="form-control">
+                                                                    <option>Standard: FREE Arrives in 10-20 days</option>
+                                                                    <option>Two day: 20 RON Arrives in 2-5 days</option>
+                                                                    <option>Next day: 35 RON Arrives in 1-2 days</option>
+                                                                </select>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Other taxes</th>
+                                                    <td class="text-right">RON 0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Total</th>
+                                                    <td class="text-right">RON 2310</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h5>Free shipping</h5>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="#" class="btn btn-lg btn-block btn-alt btn-icon btn-icon-right btn-icon-go pull-right">
+                                            <span>Go to next step</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

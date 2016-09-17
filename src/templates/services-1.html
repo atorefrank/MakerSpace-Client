@@ -1,0 +1,249 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head_title %}Welcome | {{block.super}}{% endblock %}
+
+{% block content %}
+        <!-- Optional header components (ex: slider) -->
+            
+    <!-- MAIN CONTENT -->
+        <div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Services</h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li class="active">Services</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="slice white bb">
+        <div class="wp-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="workCarousel" class="carousel carousel-4 slide color-two-l" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators hide">
+                                <li data-target="#homepageCarousel" data-slide-to="0" class="active"></li>
+                            </ol>
+                            
+                            <div class="carousel-inner">
+                                <div class="item item-dark active">
+                                    <img src="{% static 'img/prv/school/school-5.jpg' %}" alt="" class="img-responsive">
+                                </div>
+                                <div class="item item-dark">
+                                    <img src="{% static 'img/prv/magazine/magazine-6.jpg' %}" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                            
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#workCarousel" data-slide="prev">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a class="right carousel-control" href="#workCarousel" data-slide="next">
+                                <i class="fa fa-angle-right"></i>
+                            </a>       
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-title-wr">
+                            <h3 class="section-title left"><span>Why choose us</span></h3>
+                        </div>
+                        <p>
+                            <span class="primary-letter-style-1">L</span>
+                            You have an invention or a dream you have considered for years and you have not been able to get a prototype to experiment with, we provide most materials to help grow your seedling into a full fledged amazon so you can explore your world and grow your community and find a community of lifelong learners, ready to journey to the next level of lifelong learning.
+                        </p> 
+                        <p>
+                            We harbor the latest in new technology and cultivate a vibrant and energetic environment that fosters creativity. If you dont find what you need in stock, ask and you shall recieve,live like the world will provide for you and it will.mother earth has abundant resources,with treasures...you just have to reach out and ask
+                        </p> 
+                        <ul class="list-check">
+                            <li><i class="fa fa-check"></i> Dream Big</li>
+                            <li><i class="fa fa-check"></i> Be Curious</li>
+                            <li><i class="fa fa-check"></i> Be Uncomfortably Excited</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice light-gray bb">
+        <div class="wp-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="wp-block hero base no-margin">
+                            <div class="thmb-img">
+                                <i class="fa fa-lightbulb-o"></i>
+                            </div>
+                            
+                            <h2>Generating ideas</h2>
+                            <p class="text-center">We leverage the strengths of the local community and bring in experts ranging from the arts, to technology, to agriculture to teach the latest and newest developments in their field  </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="wp-block hero base no-margin">
+                            <div class="thmb-img">
+                                <i class="fa fa-keyboard-o"></i>
+                            </div>
+                            
+                            <h2>Prototype model</h2>
+                            <p class="text-center">3d print it, wood work it, laser cut it, metal work it, rasberry pi it, leap motion it ... There are many ways you can prototype idea. Not only do we provide the tools, we also provide a process </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="wp-block hero base no-margin">
+                            <div class="thmb-img">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            
+                            <h2>Design and Code</h2>
+                            <p class="text-center">Our community of designers and coders have been working diligently and experimenting with new code, advancing our local community to a global level. Weekly meetups where devs showcase their work. </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="wp-block hero base no-margin">
+                            <div class="thmb-img">
+                                <i class="fa fa-rocket"></i>
+                            </div>
+
+                            <h2>Launching and Monitoring</h2>
+                            <p class="text-center">We will help inspire you to take your project to the next level in our different maker faires ,networking dating events and our annual Gargantua Gobal Domination Summit Soiree. </p>
+                        </div>
+                    </div>
+                        
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section class="slice white bb">
+        <div class="wp-section">
+            <div class="container">
+                <div class="section-title-wr">
+                    <h3 class="section-title left">
+                        <span>What we do</span>
+                        <small>We do what our community does!</small>
+                    </h3>
+                </div>
+                <div class="row mt-20">
+                    <div class="col-md-4 col-sm-6 ">
+                        <div class="icon-block icon-block-1">
+                            <div class="icon-block-item">
+                                <i class="fa fa-list-alt"></i>
+                            </div>
+                            <div class="icon-block-body">
+                                <h4 class="">Endless possibilities</h4>
+                                <p>This is a gym for the mind, the only limit is your imagination.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 ">
+                        <div class="icon-block icon-block-1">
+                            <div class="icon-block-item">
+                                <i class="fa fa-file"></i>
+                            </div>
+                            <div class="icon-block-body">
+                                <h4 class="">Over 4000 square foot of space</h4>
+                                <p>Lots of space to collaborate in groups or individually. Come experience the power of co-working!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 ">
+                        <div class="icon-block icon-block-1">
+                            <div class="icon-block-item">
+                                <i class="fa fa-file"></i>
+                            </div>
+                            <div class="icon-block-body">
+                                <h4 class="">Great design processes.</h4>
+                                <p>We have a team familiar with the design thinking processes. Our facilitators have some of the best training through the Hasso Plattner Institute of Design at Stanford.</p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>                            
+            </div>
+        </div>
+    </section>
+    
+    <section class="slice bg-base p-50">
+        <div class="wp-section">
+            <div class="container">  
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <h2>You build it, you rock it</h2>
+                            <p>
+                                Ever felt like you don't have a product that addresses your needs? Or that you just want to do something differently?
+                                <br>
+                                Come build it to your taste and then rock it afterwards. Better yet, rock it with everyone else!
+                            </p>
+                            <span class="clearfix"></span>
+                            <br>
+                            <div class="text-center">
+                                <a href="http://player.vimeo.com/video/22290612" class="btn btn-lg btn-b-white mt-20 ext-source" title="">Watch our video</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="slice white">
+        <div class="wp-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{% static 'img/prv/s-1.jpg' %}" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="icon-block icon-block-1">
+                            <div class="icon-block-item">
+                                <i class="fa fa-code-fork"></i>
+                            </div>   
+                            <div class="icon-block-body">
+                                <h4 class="title">Software Design</h4>
+                                <p>Front end, backend, mid-tier, higher level, assembly level and a tonne of other jargon. What do you need to know to build what you need? We can help with that too!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-block icon-block-1">
+                            <div class="icon-block-item">
+                                <i class="fa fa-camera"></i>
+                            </div>   
+                            <div class="icon-block-body">
+                                <h4 class="title">Fresh design</h4>
+                                <p>Having something that looks great and works great is awesome. However, what do your stakeholders think about it, does it make their lives better? We have tools to help you answer the fundamental questions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-block icon-block-1">
+                            <div class="icon-block-item">
+                                <i class="fa fa-cogs"></i>
+                            </div>   
+                            <div class="icon-block-body">
+                                <h4 class="title">We love Building</h4>
+                                <p>We are also makers ourselves. We understand the passion and drive to be build what you want when you wnat to and how you want it. We are here to help you through the adventure.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    {% endblock %}

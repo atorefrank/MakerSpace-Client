@@ -1,0 +1,221 @@
+{% extends "base.html" %}
+
+{% block head_title %}Welcome | {{block.super}}{% endblock %}
+
+{% block content %}
+        <!-- Optional header components (ex: slider) -->
+            
+    <!-- MAIN CONTENT -->
+    <div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Pricing plans</h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li class="active">Pricing plans</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- LIGHT -->
+    <section class="slice bg-white">
+        <div class="wp-section pricing-plans pricing-plans-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="wp-block default">
+                            <div class="plan-header light">
+                                <h2 class="plan-title">Students</h2>
+                            </div>
+                            <div class="plan-price">
+                                <h3 class="price-tag">
+                                    <span>$</span>24<sup>99</sup>
+                                </h3>
+                                <span class="price-interval">per month</span>
+                            </div>
+                            <ul>
+                                <li><strong>Students</strong></li>
+                                <li>Leap motion and Rasberry Pi's</li>
+                                <li>3D printing Lab Access</li>
+                                <li>Fabrication Tools</li>
+                                <li>Media Studio</li>
+                            </ul>          
+                            <p class="plan-select-block">
+                                <a href="{% url 'register' %}" class="btn btn-lg btn-block-bm btn-light btn-icon btn-check" hidefocus="true">
+                                    <span>Sign Up</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="wp-block default">
+                            <div class="plan-header light">
+                                <h2 class="plan-title">Fluxxers</h2>
+                            </div>
+                            <div class="plan-price">
+                                <h3 class="price-tag">
+                                    <span>$</span>49<sup>99</sup>
+                                </h3>
+                                <span class="price-interval">per month</span>
+                            </div>
+                            <ul>
+                                <li><strong>21+ Adult</strong></li>
+                                <li>Leap motion and Rasberry Pi's</li>
+                                <li>3D printing Lab Access</li>
+                                <li>Fabrication Tools</li>
+                                <li>Media Studio</li>
+                            </ul>          
+                            <p class="plan-select-block">
+                                <a href="{% url 'register' %}" class="btn btn-lg btn-block-bm btn-light btn-icon btn-check" hidefocus="true">
+                                    <span>Sign Up</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="wp-block popular">
+                            <a href="#" class="badge-corner">
+                                <span><i class="fa fa-star"></i></span>
+                            </a>
+                            <div class="plan-header light">
+                                <h2 class="plan-title">TinkerPal</h2>
+                            </div>
+                            <div class="plan-price">
+                                <h3 class="price-tag">
+                                    <span>$</span>79<sup>99</sup>
+                                </h3>
+                                <span class="price-interval">per month</span>
+                            </div>
+                            <ul>
+                                <li><strong>Two adults</strong></li>
+                                <li>Leap motion and Rasberry Pi's</li>
+                                <li>3D printing Lab Access</li>
+                                <li>Fabrication Tools</li>
+                                <li>Media Studio</li>
+                            </ul>          
+                            <p class="plan-select-block">
+                                <a href="{% url 'register' %}" class="btn btn-lg btn-block-bm btn-light btn-icon btn-check" hidefocus="true">
+                                    <span>Sign Up</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="wp-block default">
+                            <div class="plan-header light">
+                                <h2 class="plan-title">Groups</h2>
+                            </div>
+                        <div class="widget">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
+                                            CareMakers
+                                          </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+                                        <div class="panel-body">
+                                            <div class="plan-price">
+                                                <h3 class="price-tag">
+                                                    <span>$</span>99<sup>99</sup>
+                                                </h3>
+                                                <span class="price-interval">per month</span>
+                                            </div>
+                                            <ul>
+                                                <li><strong>Two Adults & One Child</strong></li>
+                                                <li>Leap motion and Rasberry Pi's</li>
+                                                <li>3D printing Lab Access</li>
+                                                <li>Fabrication Tools</li>
+                                                <li>Media Studio</li>
+                                            </ul>          
+                            <p class="plan-select-block">
+                                <a href="{% url 'register' %}" class="btn btn-lg btn-block-bm btn-light btn-icon btn-check" hidefocus="true">
+                                    <span>Sign Up</span>
+                                </a>
+                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+                                                WolfPack
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;">
+                                        <div class="panel-body">
+                                            <div class="plan-price">
+                                                <h3 class="price-tag">
+                                                    <span>$</span>149<sup>99</sup>
+                                                </h3>
+                                                <span class="price-interval">per month</span>
+                                            </div>
+                                            <ul>
+                                                <li><strong>Four Adults</strong></li>
+                                                <li>Leap motion and Rasberry Pi's</li>
+                                                <li>3D printing Lab Access</li>
+                                                <li>Fabrication Tools</li>
+                                                <li>Media Studio</li>
+                                            </ul>          
+                            <p class="plan-select-block">
+                                <a href="{% url 'register' %}" class="btn btn-lg btn-block-bm btn-light btn-icon btn-check" hidefocus="true">
+                                    <span>Sign Up</span>
+                                </a>
+                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="">
+                                                Non-profit Organizations
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse in" style="height: auto;">
+                                        <div class="panel-body">
+                                            <div class="plan-price">
+                                                <h3 class="price-tag">
+                                                    <span>$</span>99<sup>99</sup>
+                                                </h3>
+                                                <span class="price-interval">per month</span>
+                                            </div>>
+                                            <ul>
+                                                <li><strong>Two Adults & One Child</strong></li>
+                                                <li>Leap motion and Rasberry Pi's</li>
+                                                <li>3D printing Lab Access</li>
+                                                <li>Fabrication Tools</li>
+                                                <li>Media Studio</li>
+                                            </ul>          
+                            <p class="plan-select-block">
+                                <a href="{% url 'register' %}" class="btn btn-lg btn-block-bm btn-light btn-icon btn-check" hidefocus="true">
+                                    <span>Sign Up</span>
+                                </a>
+                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

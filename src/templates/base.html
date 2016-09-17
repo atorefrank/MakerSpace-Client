@@ -1,0 +1,127 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="MRXUuJmqcaFkm525xFhqePgIcrN9uP_naRVeoicHHyY" />
+      <title>{% block head_title %} Ubiquitous Labs{% endblock %} </title>
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon" type="image/png">
+
+    {% include 'head_css.html' %}
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+    <!-- Custom styles for this template -->
+    <style>
+    body {
+    /*min-height: 2000px;*/
+  }
+  .main-container {
+    min-height: 950px;
+  }
+  .footer {
+    background-color:#C5c5c5;
+    min-height: 50px;
+    padding: 20px 0px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .navbar-default {
+  margin-bottom: 0px;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.container-fluid .jumbotron {
+  border-radius: 0px;
+}
+
+/*
+  .navbar-static-top {
+    margin-bottom: 19px;
+  }*/
+
+  .navbar-default {
+    background-color: #005880;
+    border-color: #256582;
+    background-image: url("http://www.transparenttextures.com/patterns/batthern.png");
+  }
+
+  .navbar-default .navbar-nav>li>a {
+  color: #C5C5C5;
+  }
+  .navbar-default .navbar-nav>li>a:hover {
+  color: #FFFFFF;
+  }
+  .navbar-default .navbar-brand {
+  color: #FFFFFF;
+  }
+  .navbar-default .navbar-brand:hover {
+  color: #256582;
+  }
+
+  .panel-jumbotron {
+    margin-top: 0px !important;
+  border-radius: 0px 4px 4px 4px;
+  min-height: 320px;
+  text-align: center;
+  }
+  .panel-jumbotron p {
+    font-size: 16px;
+  }
+
+  .nav-tabs-jumbotron {
+    border-bottom: 0px solid #ddd;
+  }
+
+  .nav-tabs-jumbotron>li>a {
+    color: #FFF;
+    background-color: #999;
+    border: 1px solid transparent;
+    border-bottom-width: 0;
+  }
+
+  .nav-tabs-jumbotron>li {
+
+  }
+  .nav-tab-item-jumbotron {
+    
+  }
+
+
+
+  {% block style %}
+
+  {% endblock %}
+  </style>
+  </head>
+
+
+  <body>
+  {% include 'navbar.html' %}
+
+
+  {% block content %}
+
+  {% endblock %}
+
+
+  {% include 'footer.html' %}
+
+  {% include 'javascript.html' %}
+
+
+
+
+  </body>
+</html>

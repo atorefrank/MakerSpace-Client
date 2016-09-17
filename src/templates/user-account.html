@@ -1,0 +1,93 @@
+
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head_title %}Welcome | {{block.super}}{% endblock %}
+
+{% block content %}
+        <!-- Optional header components (ex: slider) -->
+            
+    <!-- MAIN CONTENT -->
+        <div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>{{ request.user.username }}</h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li class="active">User account</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="slice bg-white">
+        <div class="wp-section user-account">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="user-profile-img">
+                            <img src="{% static 'img/prv/team/team-agency-2.jpg' %}" alt="">
+                        </div>
+                        <ul class="categories mt-20">
+                            <li><a href="{% url 'user_account' %}">Personal informations</a></li>
+                            <li><a href="{% url 'billing_history' %}">Billing history</a></li>
+                            <li><a href="{% url 'upgrade' %}">Upgrade</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">                     
+                        <div class="tabs-framed">
+                            <ul class="tabs clearfix">
+                                <li><a href="#tab-1" data-toggle="tab">About me</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab-1">
+                                    <div class="tab-body">
+                                        <dl class="dl-horizontal style-2">
+                                            <h3 class="title title-lg">Personal information</h3>
+                                            
+                                            <dt>First name:</dt>
+                                            <dd>
+                                                <span class="pull-left"><b>{{ request.user.first_name }}</b> </span>
+                                            </dd>
+                                            <hr>
+                                            <dt>Last name:</dt>
+                                            <dd>
+                                                <span class="pull-left"><b>{{ request.user.last_name }}</b></span>
+                                            </dd>
+                                            <hr>
+                                            <dt>Email:</dt>
+                                            <dd>
+                                            <span class="pull-left"><b>{{ request.user.email }}</b></span>
+                                            </dd>
+                                            <hr>
+                                            <dt>Bio:</dt>
+                                            <dd>
+                                            <span class="pull-left"><b>{{ request.UserProfile.bio }}</b></span>
+                                            </dd>
+                                            <hr>
+                                            <dt>Facebook Profile:</dt>
+                                            <dd>
+                                            <span class="pull-left"><b>{{ request.user.facebook_link }}</b></span>
+                                            </dd>
+                                            <hr>
+                                            <dt>Instagram Link:</dt>
+                                            <dd>
+                                            <span class="pull-left"><b>{{ request.user.instagram_link }}</b></span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

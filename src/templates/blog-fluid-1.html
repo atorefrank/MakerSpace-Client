@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head_title %}Welcome | {{block.super}}{% endblock %}
+
+{% block content %}
+            
+    <!-- MAIN CONTENT -->
+    	<div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h2>Blog</h2>
+                </div>
+                <div class="col-xs-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li class="active">Large grid</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="slice bg-white">
+        <div class="wp-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+	                    <!-- Video post example - 4 skins to apply: base, base-alt, light, dark and the shadowed class if you want to apply a ncie shadow on the video wrapper -->
+	                    <div class="post-item style2">
+                    		<div class="post-meta hidden-xs">
+	                    		<div class="date">
+	                    			<span class="icon"><i class="fa fa-calendar"></i></span>
+	                    			<span class="month">Jun</span>
+	                    			<span class="day">01</span>
+	                    		</div>
+	                    		<div class="like-box">
+	                    			<a href="#" class="btn btn-block btn-xs btn-base btn-icon btn-heart">
+	                    				<span>2310</span>
+	                    			</a>
+	                    		</div>
+                    		</div>
+                    		<div class="post-content-wr">
+		                        <div class="post-meta-top">
+		                            <div class="post-video">
+		                            	<video id="video1" controls preload="none" poster="{% static 'img/prv/blog/blog-img-5_1280x800.jpg' %}" class="video-js vjs-styled-skin base">
+			                                <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+			                                <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+			                            </video>
+		                            </div>
+		                            <h2 class="post-title">
+		                            	<a href="#">In order to succeed, we must first believe that we can</a>
+		                            </h2>
+		                        </div>
+		                        <div class="post-content clearfix">
+		                            <div class="post-tags">Posted in <a href="#">HOTELS</a>, <a href="#">SPECIAL PROMOS</a>, <a href="#">SUMMER</a></div>
+		                            <div class="post-comments"><strong>23</strong>comments</div>
+		                            <div class="post-desc">
+		                                <p>Our community needs, and the future needs us. We need resources to nurture and cultivate the talent in our region. We need to create a channel for those who are inspired to inspire others. While those who have yet to realize their inspiration, can find a path to inspiration</p>
+		                            </div>
+		                        </div>
+		                        <div class="post-meta-bot clearfix">
+		                            <span class="post-author">WRITTEN BY <a href="#">LEEN BORNO</a></span>
+		                            <a href="#" class="btn btn-sm btn-base">Read more</a>
+		                        </div>
+		                    </div>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+    

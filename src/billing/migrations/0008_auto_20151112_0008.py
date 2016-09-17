@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
+from django.db import models, migrations
+from django.utils.timezone import utc
+import datetime
+from django.conf import settings
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+        ('billing', '0007_auto_20151110_0201'),
+    ]
+
+    operations = [
+        migrations.CreateModel(
+            name='UserMerchantId',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('customer_id', models.CharField(max_length=120)),
+                ('subscription_id', models.CharField(max_length=120, null=True, blank=True)),
+                ('plan_id', models.CharField(max_length=120, null=True, blank=True)),
+                ('merchant_name', models.CharField(default=b'Braintree', max_length=120)),
+                ('user', models.OneToOneField(to=settings.AUTH_USER_MODEL)),
+            ],
+        ),
+        migrations.AlterField(
+            model_name='membership',
+            name='date_end',
+            field=models.DateTimeField(default=datetime.datetime(2015, 11, 12, 0, 8, 30, 951700, tzinfo=utc), verbose_name=b'End Date'),
+        ),
+        migrations.AlterField(
+            model_name='membership',
+            name='date_start',
+            field=models.DateTimeField(default=datetime.datetime(2015, 11, 12, 0, 8, 30, 951277, tzinfo=utc), verbose_name=b'Start Date'),
+        ),
+    ]

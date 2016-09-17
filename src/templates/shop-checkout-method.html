@@ -1,0 +1,253 @@
+{% extends "base.html" %}
+
+{% block head_title %}Welcome | {{block.super}}{% endblock %}
+
+{% block content %}
+        <!-- Optional header components (ex: slider) -->
+            
+    <!-- MAIN CONTENT -->
+    	<div class="pg-opt">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Shop account</h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li class="active">Shop account</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<section class="slice bg-white">
+        <div class="wp-section">
+            <div class="container">
+                <!-- Checkout process - Progress bar -->
+                <ol class="progtrckr hidden-xs" data-progtrckr-steps="6">
+                    <li class="progtrckr-done">Checkout method</li>
+                    <li class="progtrckr-todo">Shipping</li>
+                    <li class="progtrckr-todo">Payment method</li>
+                    <li class="progtrckr-todo">Order review</li>
+                    <li class="progtrckr-todo">Delivered</li>
+                </ol>
+
+                <div class="row">
+                    <div class="col-md-4">
+                    
+                        <div class="wp-block default user-form">
+                            
+                            <div class="form-header">
+                                <h2>Sign in to your account</h2>
+                            </div>
+                            <div class="form-body">
+                                <form action="" id="frmLogin" class="sky-form">                                    
+                                    <fieldset>                  
+                                        <section>
+                                            <div class="form-group">
+                                                <label class="label">Email</label>
+                                                <label class="input">
+                                                    <i class="icon-append fa fa-user"></i>
+                                                    <input type="email" name="email">
+                                                </label>
+                                            </div>     
+                                        </section>
+                                        <section>
+                                            <div class="form-group">
+                                                <label class="label">Password</label>
+                                                <label class="input">
+                                                    <i class="icon-append fa fa-lock"></i>
+                                                    <input type="email" name="email">
+                                                </label>
+                                            </div>     
+                                        </section> 
+                                        <section>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="checkbox"><input type="checkbox" name="remember" checked><i></i>Keep me logged in</label>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <section>
+                                            <button class="btn btn-base btn-icon btn-icon-right btn-sign-in pull-right" type="submit">
+                                                <span>Next Step</span>
+                                            </button>
+                                        </section>
+                                    </fieldset>  
+                                </form> 
+                            </div>
+                            <div class="form-footer">
+                                <p>Lost your password? <a href="#">Click here to recover.</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="wp-block default user-form">    
+                            <div class="form-header">
+                                <h2>I am a new user - Billing information</h2>
+                            </div>
+                            <div class="form-body">
+                                <form action="" id="frmRegister" class="sky-form">                                    
+                                    <fieldset class="no-padding">    
+                                        <section>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="subscription" id="subscription">
+                                                <i></i>Register as guest
+                                            </label>
+                                            <p>* Guest information won't be saved in our database.</p> 
+                                        <section> 
+                                        <hr>            
+                                        <section>
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="form-group">
+                                                        <label class="label">Username</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-user"></i>
+                                                            <input type="text" name="username" placeholder="">
+                                                            <b class="tooltip tooltip-bottom-right">Needed to enter the website</b>
+                                                        </label>
+                                                    </div>               
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="form-group">
+                                                        <div class="form-group">
+                                                            <label class="label">E-mail</label>
+                                                            <label class="input">
+                                                                <i class="icon-append fa fa-envelope-o"></i>
+                                                                <input type="email" name="email" placeholder="">
+                                                                <b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+                                                            </label>
+                                                        </div>  
+                                                    </div>               
+                                                </div>
+                                            </div>   
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="label">Password</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-lock"></i>
+                                                            <input type="text" name="username" placeholder="">
+                                                            <b class="tooltip tooltip-bottom-right">Needed to enter the website</b>
+                                                        </label>
+                                                    </div>               
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="label">Password</label>
+                                                        <label class="input">
+                                                            <i class="icon-append fa fa-lock"></i>
+                                                            <input type="email" name="email" placeholder="">
+                                                            <b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+                                                        </label>
+                                                    </div>               
+                                                </div>
+                                            </div>   
+                                        </section>
+                                        <hr>
+                                        <section>
+                                            <div class="row">
+                                                <section class="col-xs-6">
+                                                    <label class="label">First name</label>
+                                                    <label class="input">
+                                                        <i class="icon-append fa fa-user"></i>
+                                                        <input type="text" name="fname" placeholder="">
+                                                    </label>
+                                                </section>
+                                                <section class="col-xs-6">
+                                                    <label class="label">Last name</label>
+                                                    <label class="input">
+                                                        <i class="icon-append fa fa-user"></i>
+                                                        <input type="text" name="lname" placeholder="">
+                                                    </label>
+                                                </section>
+                                            </div> 
+                                            <div class="row">
+                                                <section class="col-xs-6">
+                                                    <label class="label">Company</label>
+                                                    <label class="input">
+                                                        <i class="icon-append fa fa-building"></i>
+                                                        <input type="email" name="email" placeholder="">
+                                                    </label>
+                                                </section>
+                                                <section class="col-xs-6">
+                                                    <label class="label">Phone</label>
+                                                    <label class="input">
+                                                        <i class="icon-append fa fa-phone"></i>
+                                                        <input type="tel" name="phone" placeholder="">
+                                                    </label>
+                                                </section>
+                                            </div>
+                                        </section>
+                                    </fieldset>  
+
+                                    <fieldset>
+                                        <div class="row">
+                                            <section class="col-xs-5">
+                                                <label class="select">
+                                                    <select name="country">
+                                                        <option value="0" selected="" disabled="">Country</option>
+                                                        <option value="244">Aaland Islands</option>
+                                                        <option value="1">Afghanistan</option>
+                                                        <option value="2">Albania</option>
+                                                        <option value="3">Algeria</option>
+                                                        <option value="4">American Samoa</option>
+                                                        <option value="5">Andorra</option>
+                                                        <option value="6">Angola</option>
+                                                        <option value="7">Anguilla</option>
+                                                        <option value="8">Antarctica</option>
+                                                        <option value="9">Antigua and Barbuda</option>
+                                                        <option value="10">Argentina</option>
+                                                    </select>
+                                                    <i></i>
+                                                </label>
+                                            </section>
+                                            
+                                            <section class="col-xs-4">
+                                                <label class="input">
+                                                    <input type="text" name="city" placeholder="City">
+                                                </label>
+                                            </section>
+                                            
+                                            <section class="col-xs-3">
+                                                <label class="input">
+                                                    <input type="text" name="code" placeholder="Post code">
+                                                </label>
+                                            </section>
+                                        </div>
+                                        
+                                        <section>
+                                            <label for="file" class="input">
+                                                <input type="text" name="address" placeholder="Address">
+                                            </label>
+                                        </section>
+                                        
+                                        <section>
+                                            <label class="textarea">
+                                                <textarea rows="3" name="info" placeholder="Additional info"></textarea>
+                                            </label>
+                                        </section>
+                                        <section>
+                                            <button class="btn btn-alt btn-icon btn-icon-right btn-icon-go pull-right" type="submit">
+                                                <span>Register now</span>
+                                            </button>
+                                        </section>
+                                    </fieldset>
+                                </form> 
+                            </div>
+                            <div class="form-footer">
+                                <p>Why do I need an account? <a href="#">Click here to find out.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

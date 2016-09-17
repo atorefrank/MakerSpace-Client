@@ -1,0 +1,136 @@
+{% load staticfiles %}
+    <!-- HEADER -->
+<div id="divHeaderWrapper">
+    <header class="header-standard-2">     
+    <!-- MAIN NAV -->
+    <div class="navbar navbar-wp navbar-arrow mega-nav" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="fa fa-bars icon-custom"></i>
+                </button>
+
+                <a class="navbar-brand" href="/">
+                    <img src="{% static 'img/Ulabs-logo-draft.png' %}" alt="">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden-md hidden-lg">
+                        <div class="bg-light-gray">
+                            <form class="form-horizontal form-light p-15" role="form">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control" placeholder="I want to find ...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-white" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="dropdown dropdown-meganav mega-dropdown-fluid">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3 mega-nav-section-wr">
+                                        <div class="mega-nav-section">
+                                            <img src="{% static 'img/prv/wk-big-img-12.jpg' %}" class="img-responsive img-thumbnail hidden-xs hidden-sm" alt="">
+                                            <h3 class="mega-nav-section-title">Maker Space</h3>
+                                            <ul class="mega-nav-ul">
+                                                <li><a href="/">U-labs</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="{% url 'about' %}">About us</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'team_profile' %}">Team</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'services' %}">Services</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'pricing' %}">Pricing plans</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'contact' %}">Contact</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'terms' %}">Terms</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">U-Access</a>
+                        <ul class="dropdown-menu">
+                        {% if request.user.is_authenticated %}     
+                            <li><a href="{% url 'user_account' %}">My account</a></li>
+                            <li><a href="{% url 'account_home' %}">Account</a></li>
+                            <li><a href="{% url 'billing_history' %}">Billing History</a></li>
+                            <li><a href="{% url 'upgrade' %}">Upgrade</a></li>
+                            <li><a href="{% url 'sign_out' %}">Logout</a></li>
+                            {% else %}
+                            <li><a href="{% url 'login' %}">Sign in</a></li>
+                            <li><a href="{% url 'register' %}">Sign up</a></li>
+                            {% endif %}  
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-meganav mega-dropdown-fluid">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3 mega-nav-section-wr">
+                                        <div class="mega-nav-section">
+                                            <h3 class="mega-nav-section-title">Gallery</h3>
+                                            <ul class="mega-nav-ul">
+                                                <li><a href="{% url 'projects' %}">Projects</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'blog' %}"> What's on my mind</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-aux animate-click" data-animate-in="animated bounceInUp" data-animate-out="animated fadeOutDown" style="z-index:500;">
+                        <a href="#" class="dropdown-form-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-user animate-wr">
+                            <li id="dropdownForm">
+                                <div class="dropdown-form">
+                                    <form class="form-horizontal form-light p-15" role="form">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="I want to find ...">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-base" type="button">Go</button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+               
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</header>        
+</div>

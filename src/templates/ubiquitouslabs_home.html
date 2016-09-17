@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}Welcome | {{block.super}}{% endblock %}
+
+<style>
+{% block style %}
+.lead {
+	text-align: center;
+}
+
+
+{% endblock %}
+</style>
+
+{% block jumbotron_content %}
+<div class='row'>
+	<div class='col-sm-6'>
+		<h1>Try Django 1.8</h1>
+		<p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. </p>
+		<p>
+		<a class="btn btn-lg btn-primary" href="" role="button">Join Us &raquo;</a>
+		</p>
+	</div>
+	<div class='col-sm-6' style="background-color:black;height:300px;">
+
+	</div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="row">
+
+	<div class="col-xs-3 pull-right">
+			<p class='lead'>{{ title}}</p>
+
+			<form method='POST' action=''>{% csrf_token %}
+			{{ form|crispy }}
+
+			<input class='btn btn-primary' type='submit' value='SignUp' />
+
+
+			</form>
+	</div>
+	<div class='col-sm-3'>
+		<p class='lead'>Built with Django &amp; Bootstrap</p>
+	</div>
+	<div class='col-sm-3'>
+		<p class='lead'>Created for Starters of all kinds. </p>
+	</div>
+
+	<div class='col-sm-3'>
+		<p class='lead'>Always Open Source</p>
+	</div>
+</div>
+
+{% endblock %}
